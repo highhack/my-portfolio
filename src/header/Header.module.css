@@ -1,0 +1,13 @@
+.header {
+    height: 100px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+.header{
+    justify-content: center;
+}
+}
