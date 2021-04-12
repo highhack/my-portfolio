@@ -1,5 +1,5 @@
 .main {
-    background-color: chocolate;
+    background-color: #0a101e;
     height: 100vh;
 }
 
@@ -12,17 +12,53 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .text {
-    width: 300px;
-    background-color: white;
+    min-width: 300px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    text-align: center;
 }
+
+.hello, .iam {
+    font-size: 30px;
+    margin-top: -6px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #fec544;
+}
+
+.myName {
+    font-size: 80px;
+    margin-bottom: 24px;
+    font-weight: 900;
+    color: #fdfeff;
+    line-height: 1;
+}
+
+.frontDeveloper {
+    font-size: 36px;
+    margin-bottom: 41px;
+    font-weight: 300;
+    color: #a9adb8;
+}
+
 .photo {
     width: 300px;
     height: 400px;
-    background-color: white;
+    border: 1px solid black;
 }
 
-@media screen and (max-width: 650px) {
+img {
+    height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .main {
+        height: 100%;
+    }
 
     .container {
         flex-direction: column;
@@ -30,11 +66,20 @@
     }
 
     .text {
-        width: 250px;
-        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: unset;
+        min-width: 0;
+        padding-right: 0;
+        padding-left: 0;
     }
 
-    .photo {
-        width: 250px;
+    .myName {
+        font-size: 40px;
+        margin-bottom: 14px;
+        font-weight: 600;
+        color: #fdfeff;
+        line-height: 1;
     }
 }

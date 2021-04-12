@@ -1,17 +1,20 @@
 import React from 'react'
 import s from './Main.module.css'
+import webphotoeditor from '../common/images/Web_Photo_Editor.jpg'
 
 function Main() {
+
     return (
         <div className={s.main}>
             <div className={s.container}>
                 <div className={s.text}>
-                    <span>Hi there</span>
+                    <span className={s.hello}>Hello, My name is</span>
                     <h1 className={s.myName}>German Goldin</h1>
-                    <p>React Frontend Developer</p>
+                    <span className={s.iam}>I am</span>
+                    <p className={s.frontDeveloper}>React Frontend Developer</p>
                 </div>
                 <div className={s.photo}>
-                    Foto
+                <img  src={webphotoeditor} />
                 </div>
             </div>
         </div>
