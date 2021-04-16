@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Main.module.css'
-import webphotoeditor from '../common/images/Web_Photo_Editor.jpg'
+import webphotoeditor from '../common/images/ava1.jpg'
 
 function Main() {
 

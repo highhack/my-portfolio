@@ -21,11 +21,12 @@ function Projects() {
                     <Project title={'Todolist'}
                              style={todolist}
                              link={'https://highhack.github.io/TodoLIst/'}
-                             description={'bla bla bla...................bla blabla bla blabla bla blabla bla blabla bla bla blabla bla blavvbla bla blabla bla bla'}/>
+                             description={'Todolist application that will help you plan your day with ease.' +
+                             'Development was created in react js. The application is written using typescript.'}/>
                     <Project title={'Social Network'}
                              style={socnet}
                              link={'https://highhack.github.io/Grain-TP/'}
-                             description={'bla bla bla..............bla bla blabla bla blabla bla blabla bla bla.....bla bla blabla bla blabla bla blabla bla blabla bla bla'}/>
+                             description={'Right now i am creating social networking app in React js using typescript.'}/>
                 </div>
             </div>
         </div>
