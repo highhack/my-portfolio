@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './Contacts.module.css'
+import s from './Contacts.module.scss'
 import Footer from "../footer/Footer";
 import Title from "../Title/Title";
 
