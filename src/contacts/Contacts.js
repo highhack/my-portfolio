@@ -5,7 +5,7 @@ import Title from "../Title/Title";
 
 function Contacts() {
     return (
-        <div className={s.contacts}>
+        <div id={'Contacts'} className={s.contacts}>
             <div className={s.container}>
                 <Title title={'CONTACTS'}/>
                 <form className={s.inputs}>
@@ -14,7 +14,7 @@ function Contacts() {
                     <textarea className={s.inputMassage} value={'Massage'}>
                     </textarea>
                 </form>
-                <button type={"submit"} className={s.send}>Send</button>
+                <button href={''} type={"submit"}  className={s.send}>Send</button>
             </div>
             <Footer/>
         </div>

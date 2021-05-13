@@ -1,0 +1,40 @@
+@import "../styles/mixins";
+
+.btn {
+  border: none;
+  @include flex(row, center, center, nowrap);
+  text-transform: uppercase;
+  padding: 7px 20px;
+  max-width: 170px;
+  width: 100%;
+  color: #fec544;
+  outline: none;
+  position: relative;
+  z-index: 0;
+  text-decoration: none;
+  font-size: 18px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    border-bottom: solid 2px #fec544;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  &:hover {
+    letter-spacing: 2px;
+    transition: all 0.3s ease 0s;
+    justify-content: center;
+    &::after {
+      border: solid 2px #fec544;
+      border-radius: 50px;
+      width: 100%;
+      height: 95%;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}

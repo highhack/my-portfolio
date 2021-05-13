@@ -14,7 +14,7 @@ function Projects() {
         backgroundImage: `url(${socNetImage})`
     }
     return (
-        <div className={s.projects}>
+        <div id={'Projects'} className={s.projects}>
             <div className={s.container}>
                 <Title title={'PROJECTS'}/>
                 <div className={s.projectsItems}>

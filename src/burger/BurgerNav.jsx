@@ -1,12 +1,12 @@
 import  React from 'react'
-import s from './Nav.module.scss'
+import s from './BurgerNav.module.scss'
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
-function Nav() {
+function BurgerNav() {
 
     return (
-        <div className={s.nav}>
+        <div className={s.burgerNav}>
             <Link to="Main"
                   className={s.link}
                   activeClass={s.active}
@@ -49,4 +49,4 @@ function Nav() {
     // );
 }
 
-export default Nav;
+export default BurgerNav;

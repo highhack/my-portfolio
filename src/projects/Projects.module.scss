@@ -1,11 +1,11 @@
-@import "./../common/variebleSCSS";
+@import "../common/styles/variebleSCSS";
 
 .projects {
-
+padding-top: 100px;
     background-color: $backgroundColor;
     min-height: 100vh;
     .container {
-        border: 1px solid black;
+        //border: 1px solid black;
         height: 100%;
         width: 80%;
         margin: 0 auto;
@@ -16,7 +16,7 @@
         .projectsItems {
             width: 100%;
             height: auto;
-            border: 1px solid black;
+            //border: 1px solid black;
             display: flex;
             justify-content: space-between;
             @media screen and (max-width: 1269px) {
