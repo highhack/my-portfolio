@@ -12,16 +12,16 @@ function Footer() {
                 <h2 className={s.footerName}>German Goldin</h2>
                 <div className={s.logos}>
                     <a className={s.socialLogo} href={'https://www.linkedin.com/in/german-goldin/'}>
-                        <img  className={s.imgLink} src={linkedin} />
+                        <img alt={''} className={s.imgLink} src={linkedin} />
                     </a>
                     <a className={s.socialLogo} href={'https://github.com/highhack'}>
-                        <img className={s.imgLink} src={github}/>
+                        <img alt={''} className={s.imgLink} src={github}/>
                     </a>
                     <a className={s.socialLogo} href={'https://www.codewars.com/users/gerichjs'}>
-                        <img className={s.imgLink} src={codewars}/>
+                        <img alt={''} className={s.imgLink} src={codewars}/>
                     </a>
                     <a className={s.socialLogo} href={'https://www.facebook.com/german.go.39'}>
-                         <img className={s.imgLink} src={facebook}/>
+                         <img alt={''} className={s.imgLink} src={facebook}/>
                     </a>
                 </div>
                 <p className={s.allRightsReserved}>© 2021 All Rights Reserved.</p>

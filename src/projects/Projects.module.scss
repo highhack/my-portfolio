@@ -16,7 +16,6 @@ padding-top: 100px;
         .projectsItems {
             width: 100%;
             height: auto;
-            //border: 1px solid black;
             display: flex;
             justify-content: space-between;
             @media screen and (max-width: 1269px) {
@@ -31,35 +30,3 @@ padding-top: 100px;
 }
 
 
-//.projects {
-//    background-color: #0a101e;
-//    min-height: 100vh;
-//}
-//
-//.container {
-//    border: 1px solid black;
-//    height: 100%;
-//    width: 80%;
-//    margin: 0 auto;
-//    display: flex;
-//    align-items: center;
-//    flex-direction: column;
-//    justify-content: flex-start;
-//}
-//
-//
-//.projectsItems {
-//    width: 100%;
-//    height: auto;
-//    border: 1px solid black;
-//    display: flex;
-//    justify-content: space-between;
-//}
-//
-//@media screen and (max-width: 1269px) {
-//    .projectsItems {
-//        flex-direction: column;
-//        align-items: center;
-//    }
-//}
-//

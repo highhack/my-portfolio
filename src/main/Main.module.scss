@@ -18,6 +18,13 @@
     }
   }
 
+  .Tilt {
+    @media screen and (max-width: 500px) {
+      position: absolute;
+      bottom: 200px;
+    }
+  }
+
   .container {
     height: 100%;
     width: 80%;
@@ -83,7 +90,8 @@
       width: 450px;
       height: 450px;
       border: 2px solid #fec544;
-      @media screen and (max-width: 1000px) {
+      padding: 30px;
+      @media screen and (max-width: 500px) {
         width: 300px;
         height: 300px;
       }
@@ -92,44 +100,11 @@
     .myImage {
       background: #0a101e;
       height: 100%;
+      border: #fdfeff solid 2px;
     }
   }
 }
 
-//  @media screen and (max-width: 1000px) {
-//    .photo {
-//      width: 300px;
-//      height: 300px;
-//    }
-//
-//    .main {
-//      height: 100%;
-//    }
-//
-//    .container {
-//      flex-direction: column;
-//      justify-content: flex-start;
-//    }
-//
-//    .text {
-//      display: flex;
-//      flex-direction: column;
-//      align-items: center;
-//      margin-right: unset;
-//      min-width: 0;
-//      padding-right: 0;
-//      padding-left: 0;
-//    }
-//
-//    .myName {
-//      font-size: 40px;
-//      margin-bottom: 14px;
-//      font-weight: 600;
-//      color: #fdfeff;
-//      line-height: 1;
-//    }
-//  }
-//}
 
 
 

@@ -40,11 +40,11 @@ function Main() {
                 </div>
                 </Fade>
 
-                    <Tilt className="Tilt" options={{ max : 15 }}>
+                    <Tilt className={s.Tilt} options={{ max : 15 }}>
                     <div className={s.photo}>
 
                         <Fade right duration={5000}>
-                    <img className={s.myImage} src={webphotoeditor}/>
+                    <img  alt={''} className={s.myImage} src={webphotoeditor}/>
                         </Fade>
                     </div>
                     </Tilt>

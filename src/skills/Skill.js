@@ -5,7 +5,7 @@ function Skill(props) {
     return (
         <div className={s.skill}>
             <div className={s.icon}>
-                <img  className={s.imgSkill} src={props.img}/>
+                <img alt={''} className={s.imgSkill} src={props.img}/>
             </div>
             <h3 className={s.skillTitle}>{props.title}</h3>
             <span className={s.description}>{props.description}</span>
