@@ -23,11 +23,11 @@ function Projects() {
         backgroundImage: `url(${rickAndMortyImage})`
     }
     return (
-        <Bounce left cascade>
+        // <Bounce left cascade>
         <div id={'Projects'} className={s.projects}>
             <div className={s.container}>
                 <Title title={'PROJECTS'}/>
-                <div className={s.projectsItems}>
+                <Bounce left cascade className={s.projectsItems}>
                     <Project title={'Todolist'}
                              style={todolist}
                              link={'https://highhack.github.io/TodoLIst/'}
@@ -48,10 +48,9 @@ function Projects() {
                              description={'Application with full information about episodes and characters ' +
                              'of the movie "Rick and Morty" '}/>
 
-                </div>
+                </Bounce>
             </div>
         </div>
-        </Bounce>
     );
 }
 

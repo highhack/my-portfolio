@@ -36,7 +36,6 @@ function Main() {
                             text={['React Frontend Developer']}
                         />
                     </p>
-                    {/*<p className={s.frontDeveloper}>React Frontend Developer</p>*/}
                 </div>
                 </Fade>
 
