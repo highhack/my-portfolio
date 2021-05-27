@@ -33,7 +33,7 @@
 
       .inputName, .inputEmail, .inputMassage {
         background: #a9adb8;
-        border: #3f4551 1px solid;
+        border: #3f4551 3px solid;
         box-sizing: border-box;
         outline: none;
         margin-bottom: 5px;
@@ -42,18 +42,24 @@
         font-weight: bold;
         padding: 6px;
         border-radius: 5px;
+
         &:-webkit-autofill {
-          border: 1px;
+          //border: 1px;
           -webkit-text-fill-color: #090e1b;
           -webkit-box-shadow: 0 0 0 1000px #a9adb8 inset;
           transition: background-color 5000s ease-in-out 0s;
           &:focus {
-            border: #fec544 2px solid;
+            border: #fec544 3px solid;
             //border: 1px solid transparent;
             transition: all 0.4s ease-in-out 0s;
           }
         }
+        &:focus {
+          border: #fec544 3px solid;
+          transition: all 0.4s ease-in-out 0s;
+        }
       }
+
       .messageSend {
         display: flex;
         align-items: center;
@@ -63,12 +69,7 @@
         color: #fec544;
         text-align: center;
       }
-      //.inputName, .inputEmail{
-      //  &focus {
-      //    border: 1px solid transparent;
-      //    transition: all 0.4s ease-in-out 0s;
-      //  }
-      //}
+
       .inputMassage {
         height: 100px;
       }
