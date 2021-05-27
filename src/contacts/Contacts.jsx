@@ -24,7 +24,8 @@ function Contacts() {
 
     const sendMassage = () => {
         setDisabled(true)
-        axios.post('http://localhost:3010/sendMassage', {name, email, message})
+        // axios.post('http://localhost:3010/sendMassage', {name, email, message})
+        axios.post('https://smtp-node-server-gg.herokuapp.com/sendMassage', {name, email, message})
             .then(res => {
                 setMessageSend(true)
                 setName('')
@@ -54,7 +55,7 @@ function Contacts() {
                         : <div>{}</div>
                     }
                 </form>
-                <button href={''} type={"submit"} onClick={sendMassage}  disabled={disabled} className={s.send}>Send</button>
+                <button type={"submit"} onClick={sendMassage}  disabled={disabled} className={s.send}>Send</button>
             </div>
             <Footer/>
         </div>
