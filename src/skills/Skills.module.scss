@@ -14,11 +14,17 @@
       width: 100%;
       height: auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
   }
 
   @media screen and (max-width: 1270px) {
+    .skillsItems {
+      padding-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 800px) {
     .skillsItems {
       flex-direction: column;
       align-items: center;
