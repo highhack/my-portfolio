@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.e06bbde7.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.f42637ec.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.f42637ec.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.b86ae3cf.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.7a3d0258.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.7a3d0258.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.5d0b3638.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.5d0b3638.js.map",
-    "static/js/2.e53ddc4d.chunk.js": "/my-portfolio/static/js/2.e53ddc4d.chunk.js",
-    "static/js/2.e53ddc4d.chunk.js.map": "/my-portfolio/static/js/2.e53ddc4d.chunk.js.map",
+    "static/js/2.3284c190.chunk.js": "/my-portfolio/static/js/2.3284c190.chunk.js",
+    "static/js/2.3284c190.chunk.js.map": "/my-portfolio/static/js/2.3284c190.chunk.js.map",
     "static/js/3.5447b573.chunk.js": "/my-portfolio/static/js/3.5447b573.chunk.js",
     "static/js/3.5447b573.chunk.js.map": "/my-portfolio/static/js/3.5447b573.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "static/css/main.e06bbde7.chunk.css.map": "/my-portfolio/static/css/main.e06bbde7.chunk.css.map",
-    "static/js/2.e53ddc4d.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.e53ddc4d.chunk.js.LICENSE.txt",
+    "static/css/main.b86ae3cf.chunk.css.map": "/my-portfolio/static/css/main.b86ae3cf.chunk.css.map",
+    "static/js/2.3284c190.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.3284c190.chunk.js.LICENSE.txt",
     "static/media/ava1.af0865dd.jpg": "/my-portfolio/static/media/ava1.af0865dd.jpg",
     "static/media/codewars-512.01b91b81.png": "/my-portfolio/static/media/codewars-512.01b91b81.png",
+    "static/media/material-ui-pngrepo-com.0a5c9c96.png": "/my-portfolio/static/media/material-ui-pngrepo-com.0a5c9c96.png",
+    "static/media/rest-api-icon.a9fc157f.png": "/my-portfolio/static/media/rest-api-icon.a9fc157f.png",
     "static/media/rick-and-morty.c6a4c29a.jpg": "/my-portfolio/static/media/rick-and-morty.c6a4c29a.jpg",
+    "static/media/sass.d5ded660.png": "/my-portfolio/static/media/sass.d5ded660.png",
     "static/media/social_network1.7aa2592d.jpg": "/my-portfolio/static/media/social_network1.7aa2592d.jpg",
     "static/media/tinycards.f79e4cdd.png": "/my-portfolio/static/media/tinycards.f79e4cdd.png",
     "static/media/todolist.81ab68d9.png": "/my-portfolio/static/media/todolist.81ab68d9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5d0b3638.js",
-    "static/js/2.e53ddc4d.chunk.js",
-    "static/css/main.e06bbde7.chunk.css",
-    "static/js/main.f42637ec.chunk.js"
+    "static/js/2.3284c190.chunk.js",
+    "static/css/main.b86ae3cf.chunk.css",
+    "static/js/main.7a3d0258.chunk.js"
   ]
 }
