@@ -31,6 +31,7 @@
         width: 80%;
       }
 
+
       .inputName, .inputEmail, .inputMassage {
         background: #a9adb8;
         border: #3f4551 3px solid;
@@ -67,6 +68,15 @@
         justify-content: space-between;
         font-size: 18px;
         color: #fec544;
+        text-align: center;
+      }
+      .error {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 18px;
+        color: #c60505;
         text-align: center;
       }
 

@@ -30,13 +30,9 @@ function Projects() {
                 <Bounce left cascade className={s.projectsItems}>
                     <Project title={'Todolist'}
                              style={todolist}
-                             link={'https://highhack.github.io/TodoLIst/'}
+                             link={'https://highhack.github.io/Todolist/'}
                              description={'Todolist application will help you plan your day easley. ' +
                              'The app was created in react js and written using typescript.'}/>
-                    <Project title={'Social Network'}
-                             style={socnet}
-                             link={'https://highhack.github.io/Grain-TP/'}
-                             description={'Right now i am creating social networking app in React js using typescript.'}/>
                     <Project title={'Learning Cards'}
                              style={cards}
                              link={'https://highhack.github.io/newCards/'}
@@ -47,6 +43,10 @@ function Projects() {
                              link={'https://highhack.github.io/Rick-and-Morty/'}
                              description={'Application with full information about episodes and characters ' +
                              'of the movie "Rick and Morty" '}/>
+                    <Project title={'Social Network'}
+                             style={socnet}
+                             link={'https://highhack.github.io/Grain-TP/'}
+                             description={'Right now i am creating social networking app in React js using typescript.'}/>
 
                 </Bounce>
             </div>
