@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import s from './Contacts.module.scss'
 import Footer from "../footer/Footer";
 import Title from "../Title/Title";
+import Preloader from '../common/preloader/Preloader'
 import axios from "axios";
 
 function Contacts() {
@@ -12,6 +13,7 @@ function Contacts() {
     const [messageSend, setMessageSend] = useState(false)
     const [disabled, setDisabled] = useState(false)
     const [error, setError] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
     const onChangeName = (e) => {
         setName(e.currentTarget.value)
@@ -30,6 +32,7 @@ function Contacts() {
         if (name === '' || email === '' || message === '') setError(true)
         else {
             setDisabled(true)
+            setIsLoading(true)
             // axios.post('http://localhost:3010/sendMassage', {name, email, message})
             axios.post('https://smtp-node-server-gg.herokuapp.com/sendMassage', {name, email, message})
                 .then(res => {
@@ -38,6 +41,7 @@ function Contacts() {
                     setEmail('')
                     setMessage('')
                     setDisabled(false)
+                    setIsLoading(false)
                     setTimeout(() => setMessageSend(false), 4000)
                 })
         }
@@ -45,6 +49,7 @@ function Contacts() {
 
     return (
         <div id={'Contacts'} className={s.contacts} >
+            {isLoading && <Preloader />}
             <div className={s.container}>
                 <Title title={'CONTACTS'}/>
                 <form className={s.inputs}>
