@@ -11,9 +11,11 @@ function Contacts() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [messageSend, setMessageSend] = useState(false)
+    const [errorSend, setErrorSend] = useState(false)
     const [disabled, setDisabled] = useState(false)
     const [error, setError] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
+
 
     const onChangeName = (e) => {
         setName(e.currentTarget.value)
@@ -24,7 +26,7 @@ function Contacts() {
     const onChangeMessage = (e) => {
         setMessage(e.currentTarget.value)
     }
-    const  hideError = () => {
+    const hideError = () => {
         error === true && setError(false)
     }
 
@@ -44,12 +46,17 @@ function Contacts() {
                     setIsLoading(false)
                     setTimeout(() => setMessageSend(false), 4000)
                 })
+                .catch(err => {
+                    setIsLoading(false)
+                    setErrorSend(true)
+                    setDisabled(false)
+                })
         }
     }
 
     return (
-        <div id={'Contacts'} className={s.contacts} >
-            {isLoading && <Preloader />}
+        <div id={'Contacts'} className={s.contacts} onClick={() => {setErrorSend(false)}}>
+            {isLoading && <Preloader/>}
             <div className={s.container}>
                 <Title title={'CONTACTS'}/>
                 <form className={s.inputs}>
@@ -67,8 +74,15 @@ function Contacts() {
                         <div className={s.messageSend}>Message has been sent successfully</div>
                         : <div>{}</div>
                     }
+                    {errorSend
+                        ?
+                        <div className={s.errorSend}>There were some problems. the message was not sent. Try again.</div>
+                        : <div>{}</div>
+                    }
                 </form>
-                <button type={"submit"} onClick={sendMassage} onBlur={hideError} disabled={disabled} className={s.send}>Send</button>
+                <button type={"submit"} onClick={sendMassage} onBlur={hideError} disabled={disabled}
+                        className={s.send}>Send
+                </button>
             </div>
             <Footer/>
         </div>
