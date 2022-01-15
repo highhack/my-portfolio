@@ -1,64 +1,92 @@
-import React  from 'react'
-import s from './Main.module.scss'
-import webphotoeditor from '../common/images/ava1.jpg'
-// import webphotoeditor2 from '../common/images/ava2.jpg'
-import Particles from 'react-particles-js';
+import React  from 'react';
+import s from './Main.module.scss';
+import webphotoeditor from '../common/images/ava1.jpg';
+import Particles from "react-tsparticles"
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
-import Tilt from 'react-tilt'
+import Tilt from 'react-tilt';
 
 
 
 const  Main = React.memo(() => {
 
-    // const [light, setLight] = useState(false)
-    // const [theme, setTheme] = useState('white')
-
-// setTimeout(() => {
-//         setLight(!light)
-//        console.log('did')
-//     }, 1000)
-
-
-    // const particlesOptWhite = {
-    //     'particles': {
-    //         'number': {
-    //             'value': 80,
-    //             'density': {
-    //                 'enable': true,
-    //                 'value_area': 800
-    //             }
-    //         }
-    //     }
-    // }
-    //
-    // const particlesOptYello = {
-    //     'particles': {
-    //         "color": {
-    //             "value": "#fec544"
-    //         },
-    //         "line_linked": {
-    //             "color": "#fec544"
-    //         },
-    //         'number': {
-    //             'value': 80,
-    //             'density': {
-    //                 'enable': true,
-    //                 'value_area': 800
-    //             }
-    //         }
-    //     }
-    // }
-
-    // let themeColor
-    // if (theme === 'dark' ) themeColor= particlesOptWhite
-    // else if (theme === 'white') themeColor= particlesOptYello
-
 
     return (
         <div id={'Main'} className={s.main}>
-            <Particles className={s.particles}
-                       // params={themeColor }
+            <Particles id="tsparticles"
+                       className={s.particles}
+                       options={{
+                           fpsLimit: 50,
+                           interactivity: {
+                               events: {
+                                   // onClick: {
+                                   //     enable: true,
+                                   //     mode: "push",
+                                   // },
+                                   onHover: {
+                                       enable: true,
+                                       mode: "repulse",
+                                   },
+                                   resize: false,
+                               },
+                               modes: {
+                                   bubble: {
+                                       distance: 500,
+                                       duration: 5,
+                                       opacity: 0.7,
+                                       size: 10,
+                                   },
+                                   push: {
+                                       quantity: 4,
+                                   },
+                                   repulse: {
+                                       distance: 200,
+                                       duration: 0.4,
+                                   },
+                               },
+                           },
+                           particles: {
+                               color: {
+                                   value: "#ffffff",
+                               },
+                               links: {
+                                   color: "#ffffff",
+                                   distance: 150,
+                                   enable: true,
+                                   opacity: 0.3,
+                                   width: 1,
+                               },
+                               collisions: {
+                                   enable: true,
+                               },
+                               move: {
+                                   direction: "none",
+                                   enable: true,
+                                   outMode: "bounce",
+                                   random: false,
+                                   speed: 3,
+                                   straight: false,
+                               },
+                               number: {
+                                   density: {
+                                       enable: true,
+                                       area: 800,
+                                   },
+                                   value: 50,
+                               },
+                               opacity: {
+                                   value: 0.5,
+                               },
+                               shape: {
+                                   type: "circle",
+                               },
+                               size: {
+                                   random: true,
+                                   value: 2,
+                               },
+                           },
+                           detectRetina: true,
+                       }}
             />
             <div className={s.container}>
                 <Fade bottom big cascade>
