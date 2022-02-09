@@ -11,6 +11,7 @@ import typescriptIcon from '../common/icons/typescript.png'
 import sassIcon from '../common/icons/sass.png'
 import gitIcon from '../common/icons/git-branch-skill.png'
 import storyBookIcon from '../common/icons/storybook.png'
+import nextjs from '../common/icons/next_js.png'
 import Fade from 'react-reveal/Fade';
 
 function Skills() {
@@ -40,6 +41,11 @@ function Skills() {
                                img={typescriptIcon}
                                description={'I mostly use TS instead of JS. It allows me to avoid' +
                                ' a lot of programming errors and speed up the development process.'}/>
+                        <Skill title={'Next.js'}
+                               img={nextjs}
+                               description={`Next.js gives me the best developer experience with 
+                               all the features I need for production: hybrid static & server rendering, 
+                               TypeScript support, smart bundling, route pre-fetching, and more.`}/>
                         <Skill title={'Git'}
                                img={gitIcon}
                                description={'Joint projects where I was part of the team were written via Git'}/>

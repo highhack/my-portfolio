@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, {useEffect}  from 'react';
 import s from './Main.module.scss';
 import webphotoeditor from '../common/images/ava1.jpg';
 import Particles from "react-tsparticles"
@@ -7,8 +7,13 @@ import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt';
 
 
+const  Main = () => {
 
-const  Main = React.memo(() => {
+    useEffect(() => {
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('tsparticles').childNodes[0].style.position = ''
+        })
+    })
 
 
     return (
@@ -117,6 +122,6 @@ const  Main = React.memo(() => {
             </div>
         </div>
     );
-})
+}
 
 export default Main;

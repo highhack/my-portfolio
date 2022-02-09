@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
+  position: relative;
   @media screen and (max-width: 1000px) {
     padding-top: 100px;
   }
@@ -17,7 +18,6 @@
       top: 60px;
     }
   }
-
 
   .container {
     height: 100%;
@@ -38,6 +38,7 @@
       padding-left: 15px;
       margin-right: auto;
       text-align: center;
+      perspective: 500px;
       @media screen and (max-width: 1000px) {
         display: flex;
         flex-direction: column;
@@ -54,6 +55,11 @@
         margin-bottom: 10px;
         font-weight: 300;
         color: #fec544;
+        transition: 0.3s;
+        :hover {
+          color: #c60505;
+          transform: rotate(45deg);
+        }
       }
 
       .myName {
@@ -62,6 +68,8 @@
         font-weight: 900;
         color: #fdfeff;
         line-height: 1;
+        text-shadow: 3px 3px 3px #fec544;
+
         @media screen and (max-width: 1000px) {
           font-size: 40px;
           margin-bottom: 14px;
@@ -99,6 +107,7 @@
     }
   }
 }
+
 
 
 
