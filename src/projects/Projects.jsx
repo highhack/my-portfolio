@@ -2,6 +2,7 @@ import React from 'react'
 import s from './Projects.module.scss'
 import Project from "./Project";
 import Title from "../Title/Title";
+import bcLiquorStoresImage from '../common/images/bc-liquor-stores.png'
 import todolistImage from '../common/images/todolist.png'
 import cardsImage from '../common/images/tinycards.png'
 import rickAndMortyImage from '../common/images/rick-and-morty.jpg'
@@ -11,6 +12,9 @@ import Bounce from 'react-reveal/Bounce';
 
 function Projects() {
 
+    const bcLiquorStores = {
+        backgroundImage: `url(${bcLiquorStoresImage})`
+    }
     const todolist = {
         backgroundImage: `url(${todolistImage})`
     }
@@ -33,6 +37,11 @@ function Projects() {
             <div className={s.container}>
                 <Title title={'PROJECTS'}/>
                 <Bounce left cascade className={s.projectsItems}>
+                    <Project title={'Wine Store'}
+                             style={bcLiquorStores}
+                            //  codeLink={'https://www.bcliquorstores.com/'}
+                             link={'https://www.bcliquorstores.com/'}
+                             description={'Wine Store: sales, promotions, special releases, new products, events and more'}/>
                     <Project title={'Todolist'}
                              style={todolist}
                              codeLink={'https://github.com/highhack/Todolist'}
