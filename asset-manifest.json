@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.51a7d8c5.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.03505dbd.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.03505dbd.chunk.js.map",
+    "main.js": "/my-portfolio/static/js/main.f98a8bfe.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.f98a8bfe.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.88fb4c83.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.88fb4c83.js.map",
     "static/js/2.ab79ef71.chunk.js": "/my-portfolio/static/js/2.ab79ef71.chunk.js",
@@ -13,6 +13,7 @@
     "static/css/main.51a7d8c5.chunk.css.map": "/my-portfolio/static/css/main.51a7d8c5.chunk.css.map",
     "static/js/2.ab79ef71.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.ab79ef71.chunk.js.LICENSE.txt",
     "static/media/ava1.af0865dd.jpg": "/my-portfolio/static/media/ava1.af0865dd.jpg",
+    "static/media/bc-liquor-stores.acdc6505.png": "/my-portfolio/static/media/bc-liquor-stores.acdc6505.png",
     "static/media/codewars-512.01b91b81.png": "/my-portfolio/static/media/codewars-512.01b91b81.png",
     "static/media/material-ui-pngrepo-com.0a5c9c96.png": "/my-portfolio/static/media/material-ui-pngrepo-com.0a5c9c96.png",
     "static/media/rest-api-icon.a9fc157f.png": "/my-portfolio/static/media/rest-api-icon.a9fc157f.png",
@@ -27,6 +28,6 @@
     "static/js/runtime-main.88fb4c83.js",
     "static/js/2.ab79ef71.chunk.js",
     "static/css/main.51a7d8c5.chunk.css",
-    "static/js/main.03505dbd.chunk.js"
+    "static/js/main.f98a8bfe.chunk.js"
   ]
 }
